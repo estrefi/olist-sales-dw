@@ -6,13 +6,20 @@ build-backend = "setuptools.build_meta"
 name = "olist_dw"
 version = "0.1.0"
 requires-python = ">=3.11"
-dependencies = ["requests"]
+dependencies = ["requests", "pandas"]
 
 [project.optional-dependencies]
-dev = ["pytest", "ruff", "pandas", "matplotlib", "ipykernel", "kaggle>=1.8", "six"]
+dev = ["pytest", "ruff", "matplotlib", "ipykernel", "kaggle>=1.8", "six"]
+
+[project.scripts]
+replay = "olist_dw.replay:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
 
 [tool.ruff]
 extend-exclude = ["notebooks"]

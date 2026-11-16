@@ -17,3 +17,4 @@ jobs:
       - run: pip install -e ".[dev]"         # install from pyproject.toml
       - run: ruff check .                    # find code problems
       - run: ruff format --check .           # check formatting
+      - run: pytest
