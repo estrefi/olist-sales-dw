@@ -9,8 +9,8 @@ requires-python = ">=3.11"
 dependencies = ["requests"]
 
 [project.optional-dependencies]
-dev = dev = ["pytest", "ruff", "pandas", "matplotlib", "ipykernel", "kaggle>=1.8", "six"
-]
+dev = ["pytest", "ruff", "pandas", "matplotlib", "ipykernel", "kaggle>=1.8", "six"]
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
