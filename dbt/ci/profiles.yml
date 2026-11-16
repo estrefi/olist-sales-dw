@@ -1,0 +1,10 @@
+olist:
+  target: ci
+  outputs:
+    ci:
+      type: databricks
+      catalog: olist
+      schema: gold
+      host: example.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/ci
+      token: not-a-real-token

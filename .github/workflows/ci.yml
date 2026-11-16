@@ -18,3 +18,13 @@ jobs:
       - run: ruff check .                    # find code problems
       - run: ruff format --check .           # check formatting
       - run: pytest
+  dbt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install dbt-databricks
+      - run: dbt parse --profiles-dir ci
+        working-directory: dbt
