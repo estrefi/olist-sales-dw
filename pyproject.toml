@@ -9,7 +9,7 @@ requires-python = ">=3.11"
 dependencies = ["requests", "pandas"]
 
 [project.optional-dependencies]
-dev = ["pytest", "ruff", "matplotlib", "ipykernel", "kaggle>=1.8", "six"]
+dev = ["pytest", "ruff", "matplotlib", "ipykernel", "kaggle>=1.8", "six", "dbt-databricks"]
 
 [project.scripts]
 replay = "olist_dw.replay:main"

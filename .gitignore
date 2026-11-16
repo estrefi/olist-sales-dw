@@ -223,4 +223,6 @@ __marimo__/
 data/
 .kaggle/
 kaggle.json
-access_token
+access_tokendbt/target/
+dbt/logs/
+dbt/dbt_packages/

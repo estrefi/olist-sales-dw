@@ -1,0 +1,15 @@
+name: olist
+version: "1.0.0"
+profile: olist
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+
+models:
+  olist:
+    staging:
+      +schema: staging
+      +materialized: view
+    marts:
+      +schema: gold
+      +materialized: table
