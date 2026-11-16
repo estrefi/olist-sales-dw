@@ -11,7 +11,6 @@ dependencies = ["requests"]
 [project.optional-dependencies]
 dev = ["pytest", "ruff", "pandas", "matplotlib", "ipykernel", "kaggle>=1.8", "six"]
 
-
 [tool.setuptools.packages.find]
 where = ["src"]
 
