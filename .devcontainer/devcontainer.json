@@ -1,5 +1,5 @@
 {
-  "name": "danish-electricity-dw",
+  "name": "olist-sales-dw",
   "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm", "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:4.1.3": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
