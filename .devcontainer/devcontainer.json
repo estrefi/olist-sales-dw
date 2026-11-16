@@ -4,7 +4,7 @@
     "ghcr.io/devcontainers/features/docker-in-docker:4.1.3": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postCreateCommand": "pip install -e '.[dev]' && curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sudo sh",
+  "postCreateCommand": "curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sudo sh; pip install -e '.[dev]'",
   "forwardPorts": [8080],
   "customizations": {
     "vscode": {
